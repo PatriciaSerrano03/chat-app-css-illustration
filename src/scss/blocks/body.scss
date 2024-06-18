@@ -1,8 +1,21 @@
 html {
   scroll-behavior: smooth;
 }
-body {
-  background-color: #111;
-  font-family: sans-serif;
-  color: white;
+
+*{
+  box-sizing: border-box;
 }
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+body {
+  margin: 0;
+  background-color: #FAFAFA;
+  font-family: sans-serif;
+  color: black;
+  font-family: "Rubik", sans-serif;
+}
+

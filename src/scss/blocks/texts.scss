@@ -1,1 +1,47 @@
+@use '../mixins/responsive.scss' as*;
+.text{
+    text-align: center;
+    color: #A39DA9;
+}
+.mobile{
+    .mobile__border{
+        .mobile__person{
+            .name{
+                color: #FFF;
+                font-size: 11px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+            }
+            .subname{
+                color: #D99EFF;
+                font-size: 8px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+            }
+        }
+    }
+}
+.conversation{
+    color: #9341C8;
+    font-family: Rubik;
+    font-size: 8px;
+    font-style: normal;
+    font-weight: 400;
+}
+.finishmessage{
+    color: #C5C9CC;
+font-size: 9px;
+font-style: normal;
+font-weight: 400;
+}
+@include responsive (laptop){
+    .headline{
+        width: 445px;
+        position: relative;
+        top:-200px;
+        left: 700px;
+    }
+}
 

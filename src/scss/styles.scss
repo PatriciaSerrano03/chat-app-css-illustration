@@ -2,3 +2,6 @@
 @use 'base/initial-reset.scss';
 @use 'config/variables.scss';
 @use 'blocks/body.scss';
+@use 'blocks/titles.scss';
+@use 'blocks/texts.scss';
+@use 'mixins/mobile.scss';

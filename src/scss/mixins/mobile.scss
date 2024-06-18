@@ -1,0 +1,132 @@
+@use '../mixins/responsive.scss' as *;
+
+.mobile{
+    width: 247px;
+    height: 505px;
+    background-color: #FFF;
+    margin-inline: auto;
+    border-radius: 30px;
+    padding: 10px;
+    &__border{
+        border-radius: 20px;
+        border: 1px solid rgba(62, 39, 83, 0.05);
+        background-color: #F5F3F7;
+    }
+
+    &__header{
+        display: flex;
+        width: 228px;
+        height: 66px;
+        border-radius: 20px 20px 6px 6px;
+        background: linear-gradient(225deg, #E844FF 0%, #8739FF 100%);
+        color: white;
+        .arrow{
+            width: 4px;
+            height: 10px;
+            color: #fff;
+        }
+        .mobile__person{
+            display: flex;
+            gap: 10px;
+            .avatar{
+                width: 24px;
+                height: 24px;
+                border-radius: 24px;
+                border: 1px solid #FFF;
+            }
+        }
+    }
+}
+.mobile__grey{
+    border-radius: 20px;
+    border: 1px solid rgba(62, 39, 83, 0.05);
+    background-color: #F5F3F7;
+    padding: 10px;
+    
+    .conversation{
+        display: grid;
+        grid-template-rows: repeat(9, 35px);
+        gap: 10px;
+        .text-1, .text-2, .text-5{
+            width: 128px;
+            height: 34px;
+            border-radius: 10px 10px 4px 10px;
+            background-color: #EEE5F4;
+            padding: 8px; 
+        }
+        &__images{
+            display: flex;
+            position: relative;
+            left: 70px;
+            width: 136px;
+            height: 40px;
+            gap: 8px;
+            .images{
+                width: 40px;
+                height: 40px;
+                border-radius: 10px;
+            }
+        }
+        .text-3, .text-4{
+            position: relative;
+            left: 80px;
+            width: 128px;
+            height: 34px;
+            border-radius: 10px 10px 4px 10px;
+            background-color: #fff;
+            color: #6E5D7E;
+            padding: 8px; 
+        }
+        .text-4{
+            left: 130px;
+            width: 80px;
+            height: 23px;
+        }
+        .text-5{
+            width: 128px;
+            height: 45px;
+        }
+        .pricewalk{
+            display: flex;
+            align-items: center;
+            width: 160px;
+            height: 32px;
+            border-radius: 10px 10px 4px 10px;
+            background: linear-gradient(225deg, #E844FF 0%, #8739FF 100%);
+            color: white;
+            padding: 8px; 
+            margin-top: 10px;
+            gap: 7px;
+            .circle{
+                width: 10px;
+                height: 10px;
+                border-radius: 50%;
+                border: 1px solid white;
+            }
+            .price,.price2{
+                position: relative;
+                left: 40px;
+                font-weight: 800;
+            }
+            .price2{
+                left: 60px;
+            }
+        }
+ 
+    }
+    .finishmessage{
+            width: 213px;
+            height: 33px;
+            border-radius: 16px;
+            background-color: white;
+            padding: 10px;
+        }
+}
+
+@include responsive (laptop){
+    .mobile{
+        position: relative;
+        top: 90px;
+        left: -150px;
+    }
+}
