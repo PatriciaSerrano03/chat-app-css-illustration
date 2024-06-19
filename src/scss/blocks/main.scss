@@ -1,1 +1,29 @@
+@use '../mixins/pseudo.scss' as *;
+@use '../mixins/responsive.scss' as*;
 
+.main{
+
+    &::after, &::before{
+        @include pseudo(510px, 1018px){
+            left: -322px;
+            top: -509px;
+            border-radius: 15.9375rem;
+            background: var(--bg-gradient);
+            z-index: -1;
+        }
+    }
+    &::before{
+        left: 188px;
+        top: 530px;
+        opacity: .2;
+        @include responsive (tablet){
+            left: 600px;
+        }
+        @include responsive (laptop){
+            left: 1137px;
+        }
+        @include responsive (desktop){
+            left: 1737px;
+        }
+    }
+}

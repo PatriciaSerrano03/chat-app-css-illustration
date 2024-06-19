@@ -1,55 +1,47 @@
 @use '../mixins/responsive.scss' as *;
+@use '../mixins/pseudo.scss' as *;
 
 .mobile{
+    position: relative;
+    top: 64px;
     width: 247px;
     height: 505px;
-    background-color: #FFF;
     margin-inline: auto;
+    border: 11px solid white;
     border-radius: 30px;
-    padding: 10px;
-    &__border{
-        border-radius: 20px;
-        border: 1px solid rgba(62, 39, 83, 0.05);
-        background-color: #F5F3F7;
-    }
+    background-color: var(--mobile-background);
 
     &__header{
         display: flex;
-        width: 228px;
+        align-items: center;
         height: 66px;
+        gap: .5rem;
+        padding: 30px 16.5px 12px 16.5px;
+        background: var(--bg-gradient);
         border-radius: 20px 20px 6px 6px;
-        background: linear-gradient(225deg, #E844FF 0%, #8739FF 100%);
-        color: white;
-        .arrow{
-            width: 4px;
-            height: 10px;
-            color: #fff;
-        }
-        .mobile__person{
-            display: flex;
-            gap: 10px;
-            .avatar{
-                width: 24px;
-                height: 24px;
-                border-radius: 24px;
-                border: 1px solid #FFF;
+
+        &::after{
+            @include pseudo(129px, 29px){
+            top: -10px;
+            left: 50%;
+            translate: -50%;
+            border-radius: 0px 0px 14px 14px;
+            background-color: #FFF;
             }
+            
         }
     }
-}
-.mobile__grey{
-    border-radius: 20px;
-    border: 1px solid rgba(62, 39, 83, 0.05);
-    background-color: #F5F3F7;
-    padding: 10px;
     
+}
+
     .conversation{
         display: grid;
-        grid-template-rows: repeat(9, 35px);
+        grid-template-rows: repeat(10, 35px);
         gap: 10px;
-        .text-1, .text-2, .text-5{
+        padding: 10px;
+        .message{
             width: 128px;
-            height: 34px;
+            height: fit-content;
             border-radius: 10px 10px 4px 10px;
             background-color: #EEE5F4;
             padding: 8px; 
@@ -67,7 +59,7 @@
                 border-radius: 10px;
             }
         }
-        .text-3, .text-4{
+        .message-2{
             position: relative;
             left: 80px;
             width: 128px;
@@ -77,14 +69,10 @@
             color: #6E5D7E;
             padding: 8px; 
         }
-        .text-4{
+        .message-4{
             left: 130px;
             width: 80px;
             height: 23px;
-        }
-        .text-5{
-            width: 128px;
-            height: 45px;
         }
         .pricewalk{
             display: flex;
@@ -113,15 +101,19 @@
             }
         }
  
-    }
-    .finishmessage{
-            width: 213px;
+        .finishmessage{
+            display: flex;
+            width: 210px;
             height: 33px;
+            align-items: center;
             border-radius: 16px;
             background-color: white;
             padding: 10px;
+            margin-top: 5px;
         }
-}
+    }
+    
+
 
 @include responsive (laptop){
     .mobile{

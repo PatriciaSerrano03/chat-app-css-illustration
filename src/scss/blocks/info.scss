@@ -1,0 +1,16 @@
+@use '../mixins/responsive.scss' as*;
+
+.headline{
+    position: relative;
+    top: 80px;
+    padding: 30px;
+    margin-inline: auto;
+}
+
+@include responsive (laptop){
+    .headline{
+        width: 445px;
+        top:-200px;
+        left: 300px;
+    }
+}

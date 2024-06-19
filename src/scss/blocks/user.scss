@@ -1,0 +1,13 @@
+.user{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    &__porfile__image{
+        width: 24px;
+        border-radius: 50%;
+        border: 1px solid #FFF;
+    }
+    &__porfile__name, &__porfile__status{
+        display: block;
+    }
+}

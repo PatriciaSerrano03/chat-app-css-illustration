@@ -3,45 +3,41 @@
   <head>
     <meta charset="UTF-8" />
     <!-- PON UN FAVICON!!! -->
-    <link rel="icon" type="image/svg+xml" href="" />
+    <link rel="icon" type="image/svg+xml" href="./images/favicon-32x32.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
     <!-- CAMBIA EL TITLE!!! -->
-    <title>Vite Template</title>
+    <title>Chat App</title>
   </head>
   <body>
     <main class="main">
-
-      <section class="mobile">
-        <div class="mobile__border">
+      <div class="mobile">
           <div class="mobile__header">
-              <img src="" alt="" class="arrow">
+              <img src="./images/Arrow.svg" alt="icon arrow" class="icon-arrow">
 
-              <div class="mobile__person">
-                  <img src="./images/avatar.jpg" alt="" class="avatar">
-                  <div>
-                      <h2 class="name">Samuel Green</h2>
-                      <span class="subname">Available to Walk</span>
-                  </div>  
+              <div class="user">
+                  <img class="user__porfile__image" src="./images/avatar.jpg" alt="avatar image" >
+                  <div class="user__info">
+                    <span class="user__porfile__name">Samuel Green</span>
+                    <span class="user__porfile__status">Available to Walk</span> 
+                  </div>
               </div>
+              <img src="./images/Points.svg" alt="icon points" class="icon-dots">
+          </div>
 
-              <img src="" alt="" class="dots">
-            </div>
-
-            <div class="mobile__grey">
-              <div class="conversation">
-                <span class="text-1">That sounds great. I’d be happy to discuss more.</span>
-                <span class="text-2">Could you send over some pictures of your dog, please?</span>
+          <div class="conversation">
+            <span class="message">That sounds great. I’d be happy to discuss more.</span>
+                <span class="message">Could you send over some pictures of your dog, please?</span>
                 <div class="conversation__images">
                   <img class="images" src="./images/dog-image-1.jpg" alt="">
                   <img  class="images" src="./images/dog-image-2.jpg" alt="">
                   <img  class="images" src="./images/dog-image-3.jpg" alt="">
                 </div>
-                <span class="text-3">Here are a few pictures. She’s a happy girl!</span>
-                <span class="text-4">Can you make it?</span>
-                <span class="text-5">She looks so happy! The time we discussed works. How long shall I take her out for?</span>
+                <span class="message-2">Here are a few pictures. She’s a happy girl!</span>
+                <span class="message-2 message-4">Can you make it?</span>
+                <span class="message">She looks so happy! The time we discussed works. How long shall I take her out for?</span>
                 <div class="pricewalk">
                   <div class="circle"></div>
                   <span>30 minutes walk</span>
@@ -52,15 +48,13 @@
                   <span>1 hour walk</span>
                   <span class="price2">$49</span>
                 </div>
-              </div>
-  
-              <div class="finishmessage">
-                <span>Type a message…</span>
-                <img src="" alt="" class="arrow2">
-              </div>
-            </div>
+
+                <div class="finishmessage">
+                  <span>Type a message…</span>
+                  <img src="./images/Arrow color.svg" alt="" class="icon-arrow2">
+                </div>
+          </div>
       </div>
-      </section>
 
       <section class="headline">
         <h1 class="title">Simple booking</h1>
